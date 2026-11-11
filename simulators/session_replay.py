@@ -50,7 +50,7 @@ def generate(route=None, seq=1, asset_id=common.ASSET_ID):
             "type": "image",
             "captured_at": common.FIXED_TIME,
             "geometry": common.point(lon, lat),
-            "assets": {"primary": {"href": f"/media/{session_id}-m{i:02d}.jpg", "media_type": "image/jpeg"}},
+            "assets": {"primary": {"href": f"https://picsum.photos/seed/{session_id}-m{i:02d}/400/300", "media_type": "image/jpeg"}},
             "thermal_capture_id": None,
             "transcript_id": None,
             "created_at": common.FIXED_TIME,

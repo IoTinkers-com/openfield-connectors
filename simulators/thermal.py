@@ -39,7 +39,7 @@ def generate(level="T0", seq=1, asset_id=common.ASSET_ID, session_id="sess-sim-0
         "reflected_temperature_c": 22.0 if level != "T0" else None,
         "distance_m": 1.5 if level != "T0" else None,
         "temperature_matrix_c": None if level == "T0" else _matrix(cfg["resolution"]["width"], cfg["resolution"]["height"]),
-        "rendered_image": {"href": f"/media/{thermal_id}.png", "media_type": "image/png"},
+        "rendered_image": {"href": f"https://picsum.photos/seed/{thermal_id}/400/300", "media_type": "image/jpeg"},
         "original_asset": {"href": f"/media/{thermal_id}.raw", "media_type": "application/octet-stream", "format": "radiometric"},
         "captured_at": common.FIXED_TIME,
     }
@@ -53,7 +53,7 @@ def generate(level="T0", seq=1, asset_id=common.ASSET_ID, session_id="sess-sim-0
         "type": "thermal",
         "captured_at": common.FIXED_TIME,
         "geometry": common.point(-70.65, -33.45),
-        "assets": {"primary": {"href": f"/media/{thermal_id}.png", "media_type": "image/png"}},
+        "assets": {"primary": {"href": f"https://picsum.photos/seed/{thermal_id}/400/300", "media_type": "image/jpeg"}},
         "thermal_capture_id": thermal_id,
         "transcript_id": None,
         "created_at": common.FIXED_TIME,
