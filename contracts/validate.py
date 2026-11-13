@@ -14,6 +14,7 @@ ENTITY_TYPES = [
     "session",
     "device",
     "asset",
+    "asset-type",
     "asset-identifier",
     "media-item",
     "thermal-capture",
