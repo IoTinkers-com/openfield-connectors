@@ -12,6 +12,7 @@ SCHEMAS_DIR = Path(__file__).resolve().parent.parent / "schemas"
 
 ENTITY_TYPES = [
     "session",
+    "consent-record",
     "device",
     "asset",
     "asset-type",
